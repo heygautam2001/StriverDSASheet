@@ -18,7 +18,6 @@ public class ReverseAnArray {
             left++;
             right--;
         }
-
         System.out.println(Arrays.toString(arr));
     }
 }
