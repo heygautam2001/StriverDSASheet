@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MoveAllZerosToEnd {
-    public static int[] moveZeroEnd(int arr[]) {
+    public static int[] moveZeroEnd(int[]arr) {
         int n = arr.length;
         int helper[] = new int[n];
         int j = 0;
@@ -25,6 +25,7 @@ public class MoveAllZerosToEnd {
 
     }
 
+    // Striver solution...
     public  static void moveZeroToEnd(int []arr){
         int idx = 0;
         for (int i = 0; i < arr.length ; i++) {

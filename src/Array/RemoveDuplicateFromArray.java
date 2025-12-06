@@ -26,6 +26,26 @@ public class RemoveDuplicateFromArray {
         }
         return  i+1;
     }
+
+    // Another solution using while loop... time O(n) space = O(1)
+    public static int removeDuplicateII(int[] arr){
+        int n = arr.length;
+        int i = 0;
+        int j = 0;
+        while (j < n){
+            if(arr[i] != arr[j]){
+                i++;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                j++;
+
+            }else{
+                j++;
+            }
+        }
+        return i+1;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter array size : ");
@@ -41,7 +61,7 @@ public class RemoveDuplicateFromArray {
 //            System.out.print(ele+" ");
 //        }
         System.out.println();
-        System.out.println(removeDuplicate(arr,n));
+        System.out.println(removeDuplicateII(arr));
         for(var ele:arr){
             System.out.print(ele+" ");
         }
