@@ -17,12 +17,10 @@ public class Subsequences {
             System.out.println();
             return;
         }
-
         // Take or pick the particular index into the subsequences
         list.add(arr[idx]);
         printSubsequence(idx+1,list,arr);
         list.removeLast();
-
         // not pick , or not take condition , this element is not added to your subsequence.
         printSubsequence(idx+1,list,arr);
 
