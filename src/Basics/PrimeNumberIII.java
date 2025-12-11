@@ -1,6 +1,6 @@
 package Basics;
 
-// Leet-code 204
+// Leet-code  204
 // count primes...
 public class PrimeNumberIII {
     public boolean isPrime(int n) {
