@@ -179,9 +179,11 @@ public class DoublyLinkedList {
 //         head = deleteTail(head);
 //         print(head);
 
-        head = removeKthNode(head,3);
+//        head = removeKthNode(head,3);
+//        print(head);
+//        head = insertBeforeHead(head,11);
         print(head);
-        head = insertBeforeHead(head,11);
+        ReverseDLL.reverseDLL(head);
         print(head);
 
     }
