@@ -145,8 +145,8 @@ public class TreeNode {
     public static void main(String[] args) {
 
         TreeNode a = new TreeNode(10);
-     TreeNode b = new    TreeNode(12);
-       TreeNode c = new  TreeNode(13);
+        TreeNode b = new TreeNode(12);
+        TreeNode c = new TreeNode(13);
         TreeNode d = new TreeNode(56);
         TreeNode e = new TreeNode(32);
         TreeNode f = new TreeNode(48);

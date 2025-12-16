@@ -53,6 +53,6 @@ public class ReverseWordInASentence {
 //       String str = sc.nextLine();
 //        System.out.println(reverseWord(str));
 //        System.out.println(reverseWord(str).length());
-        System.out.println(reverseWords("Gautam Jove Mino "));
+        System.out.println(reverseWords("Gautam Jove     Mino "));
     }
 }
