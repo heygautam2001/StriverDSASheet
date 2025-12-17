@@ -39,7 +39,7 @@ public class ReverseWordInASentence {
     }
 
     public static String reverseWords(String str){
-        String[]arr= str.split(" ");
+        String[]arr= str.split("\\s+");
         String gtr = "";
         for(String ele : arr){
           gtr+= " "+ reverseStr(ele);

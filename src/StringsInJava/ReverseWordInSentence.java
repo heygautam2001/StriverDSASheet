@@ -28,13 +28,70 @@ public class ReverseWordInSentence {
                 continue;
             gtr += arr[i]+" ";
         }
-
         return gtr.trim();
-
     }
+
+    // passes all leet-code cases
+    public String reverseWordInString(String str) {
+        str = str.trim();
+        String[]words = str.split("\\s+");
+        String result = ""; // stores the answer
+        for(int i = words.length-1; i>=0; i--){
+            result = result + words[i];
+            if(i > 0){
+                result = result + " ";
+            }
+        }
+        return result;
+    }
+
+    public String reverseWordsInString(String str) {
+        str = str.trim();
+        String[]words = str.split("\\s+");
+        StringBuilder result = new StringBuilder(); // stores the answer
+        for(int i = words.length-1; i>=0; i--){
+            result.append(words[i]);
+            if(i > 0){
+                result = result.append(" ");
+            }
+        }
+        return result.toString();
+    }
+
+    // =============================================================
+    // Optimal solutions....
+    public String reverseWordsOfString(String s) {
+        int i = s.length()-1;
+        StringBuilder sb = new StringBuilder();
+        while(i>=0){
+            while(i>=0 && s.charAt(i)==' '){
+                i--; // skip the spaces last and first
+
+            }
+
+            if(i<0)break;
+
+            int end = i;
+            while(i >= 0 && s.charAt(i) != ' '){
+                i--;
+            }
+
+            if(sb.length()>0){
+                sb.append(" ");
+            }
+
+
+            String word = s.substring(i+1 , end+1);
+            sb.append(word);
+
+        }
+        return sb.toString();
+    }
+
+
     public static void main(String[] args) {
 
-//        System.out.println(reverseWord("a good example"));
+//      System.out.println(reverseWord("a good example"));
         System.out.println(reverseWords("I am Gautam"));
 
     }

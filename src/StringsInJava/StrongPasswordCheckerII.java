@@ -12,7 +12,6 @@ public class StrongPasswordCheckerII {
         boolean digit = false;
         boolean specialChar = false;
         char prev = ' ';
-
         for(int i= 0; i < password.length(); i++){
             char ch = password.charAt(i);
             if(ch == prev){

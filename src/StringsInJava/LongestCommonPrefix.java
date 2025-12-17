@@ -1,7 +1,7 @@
 package StringsInJava;
 
 import java.util.Arrays;
-
+// Leet-code 14
 public class LongestCommonPrefix {
     public static String longestCommonPrefix(String[]arr){
         Arrays.sort(arr);
@@ -16,6 +16,23 @@ public class LongestCommonPrefix {
             System.out.println(str3);
         }
         return str3;
+    }
+
+    // =============================================================
+
+    public String largestCommonPrefix(String[] arr) {
+        Arrays.sort(arr);
+        String str1 = arr[0];
+        String str2 = arr[arr.length-1];
+        StringBuilder str3 = new StringBuilder();
+        int n = Math.min(str1.length(),str2.length());
+        for (int i = 0; i < n; i++) {
+            if(str1.charAt(i) != str2.charAt(i))
+                return str3.toString();
+            str3.append(str1.charAt(i));
+
+        }
+        return str3.toString();
     }
 
     public static void main(String[] args) {
