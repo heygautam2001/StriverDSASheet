@@ -6,7 +6,6 @@ public class StrongPasswordCheckerII {
         if(password.length() < 8){
             return false;
         }
-
         boolean lowercase = false;
         boolean uppercase = false;
         boolean digit = false;

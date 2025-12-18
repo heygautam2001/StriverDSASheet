@@ -16,8 +16,6 @@ public class SortLinkedList {
             this.val = val;
             this.next = next;
         }
-
-
     }
 
     public ListNode sortList(ListNode head) {
