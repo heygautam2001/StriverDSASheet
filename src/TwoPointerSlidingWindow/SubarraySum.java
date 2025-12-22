@@ -50,5 +50,6 @@ public class SubarraySum {
     public static void main(String[] args) {
         int []arr = {2,5,1,7,10};
         System.out.println(subarraySumLesserThanK(arr,14));
+        System.out.println(Integer.toBinaryString(4));
     }
 }
