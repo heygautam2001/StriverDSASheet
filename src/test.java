@@ -33,7 +33,7 @@ public class test {
 //    }
 public static void main(String[] args) {
 
-    int x = 43261596;
+    System.out.println('a'-'a');
 
 
 }
