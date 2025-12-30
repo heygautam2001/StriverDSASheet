@@ -16,8 +16,6 @@ public class SearchInRotatedSortedArrayII {
                 high = high-1;
                 continue;
             }
-
-
             // Identify the sorted half of the array
             if (arr[low] <= arr[mid]){      // Left half is sorted
                 // Check if target lies in this left sorted half
