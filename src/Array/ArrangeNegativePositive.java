@@ -17,10 +17,7 @@ public class ArrangeNegativePositive {
                 negative[k++] = arr[i];
             }
         }
-
-
         // for filling the actual array in positive and negative sequence.
-
         for (int i = 0; i < n/2 ; i++) {
             arr[2*i] = positive[i];
             arr[2*i + 1] = negative[i];

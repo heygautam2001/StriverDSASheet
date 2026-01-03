@@ -1,4 +1,6 @@
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class test {
@@ -36,6 +38,15 @@ public class test {
 //    }
 public static void main(String[] args) {
 
-    System.out.println('a'-'a');
+//    System.out.println('a'-'a');
+    int[] arr = {1, 2, 3, 45};
+
+    Consumer<int[]> printArray = array -> {
+        System.out.println(Arrays.toString(array));
+    };
+
+    printArray.accept(arr);
+
 }
+
 }

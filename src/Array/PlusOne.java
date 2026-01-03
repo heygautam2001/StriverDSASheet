@@ -12,7 +12,6 @@ public class PlusOne {
             }
             digits[i] = 0;
         }
-
         int[] newNumber = new int [n+1];
         newNumber[0] = 1;
         return newNumber;
@@ -21,6 +20,5 @@ public class PlusOne {
         int arr[] = {9,9,8,9};
         int[]brr = plusOne(arr);
         System.out.println(Arrays.toString(brr));
-
     }
 }

@@ -1,0 +1,15 @@
+package TwoDArray;
+// Leet-code 1351
+public class CountNegative {
+    public int countNegatives(int[][] grid) {
+        int negative = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] < 0) {
+                    negative++;
+                }
+            }
+        }
+        return negative;
+    }
+}
