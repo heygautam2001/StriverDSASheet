@@ -39,13 +39,15 @@ public class test {
 public static void main(String[] args) {
 
 //    System.out.println('a'-'a');
-    int[] arr = {1, 2, 3, 45};
+//    int[] arr = {1, 2, 3, 45};
+//
+//    Consumer<int[]> printArray = array -> {
+//        System.out.println(Arrays.toString(array));
+//    };
+//
+//    printArray.accept(arr);
 
-    Consumer<int[]> printArray = array -> {
-        System.out.println(Arrays.toString(array));
-    };
-
-    printArray.accept(arr);
+    System.out.println(6/10);
 
 }
 
