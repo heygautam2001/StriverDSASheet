@@ -18,7 +18,7 @@ public class ArmstrongNumber {
         }
         System.out.println(digitCount);
         temp = n;
-        // sum the number by raise to the power of digit count..
+        // sum the number by raise to the power of digit count...
         int sum = 0;
         while (temp != 0){
             sum = (int)(sum + Math.pow(temp%10 , digitCount));

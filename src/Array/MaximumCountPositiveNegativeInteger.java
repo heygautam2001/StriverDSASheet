@@ -10,8 +10,6 @@ public class MaximumCountPositiveNegativeInteger {
         }
         return Math.max(positiveElement, negativeElement);
     }
-
-
     public static void main(String[] args) {
 
     }

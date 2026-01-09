@@ -21,6 +21,6 @@ public class PalindromeNumber {
             System.out.println(n+" is not a Palindrome");
         }
 
-
+//        System.out.println(Integer.reverse(100019));
     }
 }

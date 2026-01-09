@@ -47,7 +47,16 @@ public static void main(String[] args) {
 //
 //    printArray.accept(arr);
 
-    System.out.println(6/10);
+//    System.out.println(6/10);
+
+    String str = "Hello";
+    String str2 = new String("Hello");
+
+
+    System.out.println(str == str2);
+
+    System.out.println(str.equals(str));
+
 
 }
 
