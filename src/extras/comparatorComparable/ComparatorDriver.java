@@ -14,9 +14,9 @@ public class ComparatorDriver
         li.add(7);
         li.add(6);
         li.add(5);
-        System.out.println(li);
-        li.sort(new MyComparator());
-        System.out.println(li);
+//        System.out.println(li);
+//        li.sort(new MyComparator());
+//        System.out.println(li);
 
         List <String> li2 = new ArrayList<>();
         li2.add("Gautam");
@@ -25,10 +25,10 @@ public class ComparatorDriver
         li2.add("Baman");
         li2.add("Vikas");
         li2.add("Zoya");
-        System.out.println(li2);
-//        li2.sort(null); // It sorts in lexo-graphical order.
-        li2.sort(new StringComparator());
-        System.out.println(li2);
+//        System.out.println(li2);
+////        li2.sort(null); // It sorts in lexo-graphical order.
+//        li2.sort(new StringComparator());
+//        System.out.println(li2);
 
         Student s1 = new Student(1,"Ayush" , 78.99);
         Student s2 = new Student(2,"Gautam" ,89.0);
