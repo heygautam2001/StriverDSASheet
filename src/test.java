@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
@@ -49,13 +50,16 @@ public static void main(String[] args) {
 
 //    System.out.println(6/10);
 
-    String str = "Hello";
-    String str2 = new String("Hello");
+//    String str = "Hello";
+//    String str2 = new String("Hello");
+//
+//
+//    System.out.println(str == str2);
+//
+//    System.out.println(str.equals(str));
 
 
-    System.out.println(str == str2);
 
-    System.out.println(str.equals(str));
 
 
 }

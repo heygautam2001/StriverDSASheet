@@ -20,9 +20,7 @@ public class trianglePattern05 {
                 System.out.print("*");
             }
             nst--;
-
             System.out.println( );
-
         }
 
     }
