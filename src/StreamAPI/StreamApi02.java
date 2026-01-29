@@ -21,8 +21,8 @@ public class StreamApi02 {
 
         //Infinite stream
         Stream <Integer> generate = Stream.generate(()->1);
+        System.out.println(generate);
         System.out.println(Stream.iterate(1,x->x+1).limit(100).collect(Collectors.toList()));
-
 
 
     }

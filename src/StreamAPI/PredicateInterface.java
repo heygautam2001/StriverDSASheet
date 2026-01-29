@@ -1,5 +1,6 @@
 package StreamAPI;
 
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 // Predicate is a functional interface which is used to check the condition.
@@ -21,6 +22,16 @@ public class PredicateInterface {
 
         System.out.println(isWordStartWithA.and(isWordEndsWithH).test("AyusF"));
         System.out.println(isWordEndsWithH.or(isWordStartWithA).test("AoLA"));
+
+        BiPredicate<Integer,String> check = (num,str)->{
+            if (str.length() == 6 && num == 23){
+                return true;
+            }
+            return false;
+        };
+
+        System.out.println(check.test(23,"Gautam"));
+        System.out.println();
 
 
 

@@ -17,7 +17,6 @@ public class SupplierInterface {
 //        supplier.get();
 
         // Combined example
-
         Predicate<Integer> predicate = x -> x%2 == 0;
         Function<Integer,Integer> function = x -> x*x;
         Consumer<Integer> consumer = x -> System.out.println(x);
@@ -25,7 +24,6 @@ public class SupplierInterface {
         if(predicate.test(supplier.get())){
             consumer.accept( function.apply(supplier.get()));
         }
-
 
     }
 }

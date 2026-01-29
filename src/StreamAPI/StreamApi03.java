@@ -11,13 +11,14 @@ public class StreamApi03 {
         // Intermediate operation transform a stream into another stream.
         // They are lazy,means they don't execute until a terminal operations is involved.
 
-        List<String> list = Arrays.asList("Akshit","Ram","Shyam","Ghanshyam","Akshit","Ram");
+        List<String>list = Arrays.asList("Akshit","Ram","Shyam","Ghanshyam","Akshit","Ram");
         Stream<String> filteredList = list.stream().filter(x->x.startsWith("A"));
         System.out.println(filteredList);
         // no filtering operation at this point as terminal operation is not present.
         // 1. filter
         Long res = list.stream().filter(x->x.startsWith("A")).count();
         System.out.println(res);
+        System.out.println(list.stream().filter(x->x.startsWith("A")).distinct().collect(Collectors.toList()));
 
         //2.Map
         Stream<String> stringStream = list.stream().map((str)-> str.toUpperCase());
@@ -35,10 +36,6 @@ public class StreamApi03 {
 
         //6.Skip
 //        Stream.generate(()->1).;
-
-
-
-
 
     }
 }

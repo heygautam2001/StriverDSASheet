@@ -37,10 +37,5 @@ public class FunctionInterface {
 //        MyFunction function = new MyFunction();
 //        System.out.println(function.apply("Gautam"));
 
-
-
-
-
-
     }
 }
