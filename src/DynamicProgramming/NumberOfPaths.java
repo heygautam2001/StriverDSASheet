@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class NumberOfPaths {
+public class NumberOfPaths{
     public static int  paths(int sr , int sc , int er , int ec , String str){
         if (sr > er || sc > ec)
             return 0;
@@ -71,5 +71,5 @@ public class NumberOfPaths {
 
 
 /*
-* Given a m*n matrix(Grid)finds all possible paths from source to destination..
+* Given a m*n matrix(Grid)finds all possible paths from source to destination...
 * */
