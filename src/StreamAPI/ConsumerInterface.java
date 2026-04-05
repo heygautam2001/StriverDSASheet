@@ -14,8 +14,6 @@ public class ConsumerInterface {
         printArray.accept(arr);
         System.out.println();
         printArray.andThen(printArray).accept(new int[]{2,3,4,5,7,8,9});
-
-
     }
 
 }

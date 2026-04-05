@@ -31,6 +31,7 @@ public class FunctionInterface {
 
         System.out.println(doubleIt.compose(tripleIt).apply(20));
 
+        // Identity-> whatever you give it returns you the same things.
         Function<String,String> identity = Function.identity();
         System.out.println(identity.apply("Gautam"));
 

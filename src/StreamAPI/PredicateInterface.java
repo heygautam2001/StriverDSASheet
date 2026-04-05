@@ -34,12 +34,5 @@ public class PredicateInterface {
         System.out.println();
 
 
-
-
-
-
-
-
-
     }
 }
