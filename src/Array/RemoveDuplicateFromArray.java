@@ -11,9 +11,7 @@ public class RemoveDuplicateFromArray {
             set.add(arr[i]);
 
         }
-
-
-       return set;
+        return set;
     }
     public static int removeDuplicate(int arr[],int n)
     {
