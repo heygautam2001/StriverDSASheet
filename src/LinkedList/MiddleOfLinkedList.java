@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class MiddleOfLinkedList {
+public class  MiddleOfLinkedList {
    public static class Node{
         int data;
         Node next;

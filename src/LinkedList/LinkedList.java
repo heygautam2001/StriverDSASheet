@@ -33,16 +33,31 @@ public class LinkedList {
 
     }
 
-    public void insertAtNthIdx(int val , int idx){
+    public void insertAtNthIdx(int val, int idx) {
+        if (idx < 0)
+            throw new IllegalArgumentException("Index cannot be negative: " + idx);
+
         Node newNode = new Node(val);
+
+        // Insert at head
+        if (idx == 0) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+
         Node temp = head;
-        for (int i = 1; i < idx-1; i++) {
+        for (int i = 0; i < idx - 1; i++) {
+            if (temp == null)
+                throw new IndexOutOfBoundsException("Index out of bounds: " + idx);
             temp = temp.next;
         }
-        Node nextData = temp.next;
-        temp.next = null;
+
+        if (temp == null)
+            throw new IndexOutOfBoundsException("Index out of bounds: " + idx);
+
+        newNode.next = temp.next; // could be null (inserting at tail) — that's fine
         temp.next = newNode;
-        newNode.next = nextData;
     }
     public void update(int val , int idx){
         Node temp = head;
@@ -60,34 +75,41 @@ public class LinkedList {
             throw new NullPointerException("Cannot delete from empty linked list!");
         else
             head = head.next;
+        System.gc();
     }
 
     public void deleteFromLast(){
         Node temp = head;
-        if (head == null)
+        if (head == null )
             throw new NullPointerException("Cannot delete from empty Linked List");
+//        if (head.next == null) return null;
         while(temp.next != null && temp.next.next != null)
             temp = temp.next;
         temp.next = null;
     }
-
-    public void deleteFromAnyIdx(int idx){
-        Node temp = head;
+    public void deleteFromAnyIdx(int idx) {
         if (head == null)
-            throw new NullPointerException("cannot delete from empty linked list");
-        if (head.next == null) {
+            throw new NullPointerException("Cannot delete from empty linked list");
+        if (idx < 0)
+            throw new IllegalArgumentException("Index cannot be negative: " + idx);
+
+        // Delete head node
+        if (idx == 0) {
+            head = head.next;
             return;
         }
-        for (int i = 1; i < idx-1; i++) {
+
+        Node temp = head;
+        for (int i = 0; i < idx - 1; i++) {
+            if (temp.next == null)
+                throw new IndexOutOfBoundsException("Index out of bounds: " + idx);
             temp = temp.next;
         }
-        if (temp.next.next == null){
-            deleteFromLast();
-            return;
-        }
-        Node x = temp.next.next;
-        temp.next.next = null;
-        temp.next = x;
+
+        if (temp.next == null)
+            throw new IndexOutOfBoundsException("Index out of bounds: " + idx);
+
+        temp.next = temp.next.next; // unlink the node at idx
     }
 
     public int size()
